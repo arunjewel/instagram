@@ -1,0 +1,60 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
+
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+
+<nav class="navbar navbar-expand-sm bg-light navbar-light fixed-top">
+ 
+  
+  <span><i class="fa fa-instagram" aria-hidden="true"></i> Instagram</span>
+ <div class="main-menu menu-dark menu-icon-right menu-shadow">
+  ...</div>
+  <ul class="navbar-nav ml-auto"> 
+    <li class="nav-item"> 
+       
+      
+      <a href="#" style='font-size:24px'> <i class='far fa-paper-plane'></i>  </a>
+  
+    </li> 
+    
+</ul> 
+
+</nav> 
+
+<div class="feed">
+ 
+  <ng-container *ngFor="let tit of data.slice(0, 30);">
+    
+   <h2>{{tit.id}}</h2>
+   <div class="right">
+    <a href="#" style='font-size:24px'> 
+   <i style="font-size:24px" class="fa">&#xf142;</i>
+   </a>
+   </div>
+   <img  src="{{tit['high thumbnail']}}" />
+   <div class="column">
+   <a href="#"  style='font-size:24px'> <i class="fa fa-heart-o" ></i>  </a>
+   <a routerLink="/hi" style='font-size:24px'> <i class='far '>&#xf075;</i>  </a>
+   <a href="#" style='font-size:24px' > <i class='far fa-paper-plane'></i>  </a>
+</div>
+<div class="right">
+ <a href="#"> <i class='far fa-bookmark' style='font-size:24px'></i></a>
+</div>
+   <h3>{{tit.title}}</h3>
+     
+   
+   
+  
+  </ng-container>
+</div>
+
+
+
+
+<router-outlet></router-outlet>

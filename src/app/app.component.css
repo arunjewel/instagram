@@ -1,0 +1,18 @@
+span{
+    font-family:URW Chancery L, cursive;
+    font-size:36px;
+    font-style:italic;   
+}
+a{
+    font-size:36px;  
+}
+.feed{
+    position: relative;
+    top: 150px;
+}
+.right{
+    
+        text-align: right;
+        float: right;
+        right: 0px;
+    }
