@@ -22,5 +22,16 @@ a{
          padding-right: 10px;
     } 
     .jumbotron{
-        background: rgb(228, 235, 245);
+        background: rgb(215, 220, 228);
+        margin: auto;
+        width: 100%;
+        border: 3px solid gray;
+        padding: 10px;
+    }
+    img{
+        right: 10px;
+    }
+    .mr-2{ 
+        padding-left: 10px;
+        padding-right: 10px;
     }

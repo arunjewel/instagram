@@ -38,23 +38,32 @@
    <i style="font-size:24px" class="fa">&#xf142;</i>
    </a>
    </div>
+   
    <img  src="{{tit['high thumbnail']}}" />
-   <div class="column">
+  
+   <div class="column ">
+     <div class="mr-2">
    <a href="#"  style='font-size:24px'> <i class="fa fa-heart-o" ></i>  </a>
+  
    <a routerLink="/hi" style='font-size:24px'> <i class='far '>&#xf075;</i>  </a>
   
-   <a href="#" style='font-size:24px' > <i class='far fa-paper-plane'></i>  </a>
+  <a href="#" style='font-size:24px' > <i class='far fa-paper-plane'></i>  </a>
+</div>
 </div>
 <div class="right">
  <a href="#"> <i class='far fa-bookmark' style='font-size:24px'></i></a>
 </div>
-   <h3>{{tit.title}}</h3>
+   <h3>{{tit.title |  slice:0:20 }}{{ tit.title.length > 20 ?  '....read more' : ' ' }}</h3>
      
+</div>
+<div>
+  <a routerLink="/hi" style='font-size:24px'>View all comments</a>
 </div>
    
   </div>
   </ng-container>
 </div>
+
 
 
 
