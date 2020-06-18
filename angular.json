@@ -25,7 +25,8 @@
             ],
             "styles": [
 
-              "styles.css"
+              "styles.css",
+              "~bootstrap/dist/css/bootstrap.css"
               
               
 
