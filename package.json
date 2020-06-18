@@ -14,7 +14,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "install:prod": "npm install",
-    "postinstall": "ng build --aot -prod"
+    "postinstall:prod": "ng build --prod --aot"
     
   },
   "private": true,
