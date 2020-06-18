@@ -30,7 +30,8 @@
 <div class="feed">
  
   <ng-container *ngFor="let tit of data.slice(0, 30);">
-    
+    <div class="jumbotron">
+      <div class="container">
    <h2>{{tit.id}}</h2>
    <div class="right">
     <a href="#" style='font-size:24px'> 
@@ -41,6 +42,7 @@
    <div class="column">
    <a href="#"  style='font-size:24px'> <i class="fa fa-heart-o" ></i>  </a>
    <a routerLink="/hi" style='font-size:24px'> <i class='far '>&#xf075;</i>  </a>
+  
    <a href="#" style='font-size:24px' > <i class='far fa-paper-plane'></i>  </a>
 </div>
 <div class="right">
@@ -48,9 +50,9 @@
 </div>
    <h3>{{tit.title}}</h3>
      
+</div>
    
-   
-  
+  </div>
   </ng-container>
 </div>
 

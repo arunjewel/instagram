@@ -16,3 +16,11 @@ a{
         float: right;
         right: 0px;
     }
+     .column{
+         padding: 15px;
+         padding-left: 10px;
+         padding-right: 10px;
+    } 
+    .jumbotron{
+        background: rgb(228, 235, 245);
+    }
