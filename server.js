@@ -3,15 +3,15 @@
 
 
 
-var express = require('express');
-var path = require('path');
-var serveStatic = require('serve-static');
+const express = require('express');
 
-var app = express();
-app.use(serveStatic(path.join(__dirname, 'dist')));
-var distDir = __dirname + "/dist/";
- app.use(express.static(distDir));
 
-var port = process.env.PORT || 8000
-app.listen(port);
-console.log('server started ' + port);
+const app = express();
+
+ app.use(express.static(__dirname + '/dist'));
+ app.all('*',(req, res) => {
+ res.status(200).sendFile(__dirname + '/dist/index.html');
+ });
+
+
+app.listen(process.env.PORT || 8080);
